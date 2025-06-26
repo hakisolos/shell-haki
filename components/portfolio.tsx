@@ -3,20 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import {
-  Github,
-  Mail,
-  MapPin,
-  Phone,
-  ExternalLink,
-  Database,
-  Code,
-  Terminal,
-  Zap,
-  Menu,
-  X,
-  ChevronDown,
-} from "lucide-react"
+import { Github, Mail, MapPin, Phone, Database, Code, Terminal, Zap, Menu, X, ChevronDown } from "lucide-react"
 import Link from "next/link"
 
 export function Portfolio() {
@@ -42,6 +29,7 @@ export function Portfolio() {
         "RESTful API for a personal blog with user authentication, CRUD operations, and real-time content management. Built with modern backend architecture.",
       tech: ["Node.js", "MongoDB", "JWT", "Express.js"],
       highlights: ["JWT Authentication", "RESTful Design", "Real-time Updates"],
+      githubLink: "https://github.com/hakisolos/personal-blogging-api",
     },
     {
       title: "Multi-device WhatsApp Bot",
@@ -49,6 +37,7 @@ export function Portfolio() {
         "Intelligent WhatsApp bot that works across multiple devices with automated responses, message scheduling, and custom commands.",
       tech: ["Python", "WhatsApp API", "MongoDB", "Webhooks"],
       highlights: ["Multi-device Support", "Automated Responses", "Custom Commands"],
+      githubLink: "https://github.com/hakisolos/wisteria-md",
     },
     {
       title: "Telegram AI Bot",
@@ -56,6 +45,7 @@ export function Portfolio() {
         "AI-powered Telegram bot with natural language processing, smart replies, and integration with external APIs for enhanced functionality.",
       tech: ["Go", "Telegram API", "AI Integration", "Redis"],
       highlights: ["AI-Powered", "Natural Language", "Real-time Processing"],
+      githubLink: "https://github.com/hakisolos/amatullah",
     },
   ]
 
@@ -202,7 +192,7 @@ export function Portfolio() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-8 sm:mt-12 px-4">
-            <Link href="#github-link-placeholder" target="_blank">
+            <Link href="https://github.com/hakisolos" target="_blank">
               <Button
                 variant="outline"
                 size="lg"
@@ -212,7 +202,7 @@ export function Portfolio() {
                 GitHub
               </Button>
             </Link>
-            <Link href="#contact-link-placeholder">
+            <Link href="https://wa.me/2349112171078">
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-white/90 transition-all duration-300 font-mono uppercase tracking-wider"
@@ -331,7 +321,7 @@ export function Portfolio() {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="bg-black/90 border-2 border-white/20 hover:border-white/60 transition-all duration-500 group relative overflow-hidden"
+                className="bg-black/95 border-2 border-white/20 hover:border-white/60 transition-all duration-500 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -348,7 +338,7 @@ export function Portfolio() {
                   <CardTitle className="text-lg sm:text-xl font-bold tracking-tight text-white mb-3">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-white/80 leading-relaxed text-sm sm:text-base">
+                  <CardDescription className="text-white leading-relaxed text-sm sm:text-base">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -361,7 +351,7 @@ export function Portfolio() {
                         {project.tech.map((tech) => (
                           <div
                             key={tech}
-                            className="bg-white/10 border border-white/20 px-2 py-1 text-xs font-mono text-center"
+                            className="bg-white/10 border border-white/20 px-2 py-1 text-xs font-mono text-white text-center"
                           >
                             {tech}
                           </div>
@@ -373,7 +363,7 @@ export function Portfolio() {
                       <h4 className="text-xs font-mono uppercase tracking-wider text-white/60 mb-3">Features</h4>
                       <ul className="space-y-2">
                         {project.highlights.map((highlight, i) => (
-                          <li key={i} className="flex items-center gap-3 text-xs sm:text-sm text-white/80">
+                          <li key={i} className="flex items-center gap-3 text-xs sm:text-sm text-white">
                             <div className="w-1 h-1 bg-white"></div>
                             {highlight}
                           </li>
@@ -383,7 +373,7 @@ export function Portfolio() {
                   </div>
 
                   <div className="flex gap-3 mt-6 sm:mt-8">
-                    <Link href="#project-code-link-placeholder">
+                    <Link href={project.githubLink}>
                       <Button
                         size="sm"
                         variant="outline"
@@ -391,16 +381,6 @@ export function Portfolio() {
                       >
                         <Github className="w-3 h-3 mr-2" />
                         Code
-                      </Button>
-                    </Link>
-                    <Link href="#project-demo-link-placeholder">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="bg-transparent border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 font-mono text-xs uppercase tracking-wider flex-1"
-                      >
-                        <ExternalLink className="w-3 h-3 mr-2" />
-                        Demo
                       </Button>
                     </Link>
                   </div>
@@ -426,7 +406,7 @@ export function Portfolio() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-            <Link href="#email-link-placeholder">
+            <Link href="https://wa.me/2349112171078">
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-white/90 transition-all duration-300 font-mono uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
@@ -435,7 +415,7 @@ export function Portfolio() {
                 Get In Touch
               </Button>
             </Link>
-            <Link href="#phone-link-placeholder">
+            <Link href="https://wa.me/2349112171078">
               <Button
                 size="lg"
                 variant="outline"
