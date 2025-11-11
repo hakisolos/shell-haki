@@ -13,8 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SHELL HAKI",
-  description: "Back End Developer",
+  title: "Haki – Backend Developer",
+  description:
+    "Professional Backend Developer specialising in APIs, microservices, and database architecture. Experienced in JavaScript, Python, and Go for building scalable, high-performance systems.",
+  keywords: [
+    "Backend Developer",
+    "API Development",
+    "Microservices",
+    "Node.js",
+    "Python",
+    "Go",
+    "Haki",
+  ],
+  openGraph: {
+    title: "Haki – Backend Developer",
+    description:
+      "Professional Backend Developer skilled in APIs, microservices & database systems.",
+    url: "https://hakidev.my.id",
+    siteName: "Haki Portfolio",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  metadataBase: new URL("https://hakidev.my.id"),
 };
 
 export default function RootLayout({
