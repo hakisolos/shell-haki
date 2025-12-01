@@ -30,7 +30,7 @@ export function Portfolio() {
       tech: ["nodejs/bunjs", "Hono", "telegram-api"],
       highlights: ["Storage", "Telegram-exploitation"],
       githubLink: "https://github.com/hakisolos/cdn",
-    },
+    },   
     {
       "title": "FlareDB",
       "description": "A lightweight database library combining the syntax familiarity of Mongoose with the simplicity and freedom of SQLite. FlareDB makes it easy to define schemas, manage collections, and perform basic CRUD operations with an intuitive API, suitable for fast prototyping and lightweight applications.",
