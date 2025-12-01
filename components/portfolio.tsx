@@ -24,28 +24,26 @@ export function Portfolio() {
 
   const projects = [
     {
-      title: "Personal Blogging API",
+      title: "File upload cdn",
       description:
-        "RESTful API for a personal blog with user authentication, CRUD operations, and real-time content management. Built with modern backend architecture.",
-      tech: ["Node.js", "MongoDB", "JWT", "Express.js"],
-      highlights: ["JWT Authentication", "RESTful Design", "Real-time Updates"],
-      githubLink: "https://github.com/hakisolos/personal-blogging-api",
+        "file storage cdn server making use of telegram api or vps",
+      tech: ["nodejs/bunjs", "Hono", "telegram-api"],
+      highlights: ["Storage", "Telegram-exploitation"],
+      githubLink: "https://github.com/hakisolos/cdn",
     },
     {
-      title: "Multi-device WhatsApp Bot",
-      description:
-        "Intelligent WhatsApp bot that works across multiple devices with automated responses, message scheduling, and custom commands.",
-      tech: ["Python", "WhatsApp API", "MongoDB", "Webhooks"],
-      highlights: ["Multi-device Support", "Automated Responses", "Custom Commands"],
-      githubLink: "https://github.com/hakisolos/wisteria-md",
-    },
-    {
-      title: "Telegram AI Bot",
-      description:
-        "AI-powered Telegram bot with natural language processing, smart replies, and integration with external APIs for enhanced functionality.",
-      tech: ["Go", "Telegram API", "AI Integration", "Redis"],
-      highlights: ["AI-Powered", "Natural Language", "Real-time Processing"],
-      githubLink: "https://github.com/hakisolos/amatullah",
+      "title": "FlareDB",
+      "description": "A lightweight database library combining the syntax familiarity of Mongoose with the simplicity and freedom of SQLite. FlareDB makes it easy to define schemas, manage collections, and perform basic CRUD operations with an intuitive API, suitable for fast prototyping and lightweight applications.",
+      "tech": ["TypeScript", "SQLite", "Mongoose-like API"],
+      "highlights": ["Schema-based Collections", "Async CRUD Methods", "SQLite Backend", "Easy Initialization"],
+      "githubLink": "https://github.com/CodeTheEarth/flareDb"
+    }
+   {
+      "title": "bytecamp",
+      "description": "No detailed description or evidence was found in the codebase to indicate this project is a Multi-device WhatsApp Bot or has related messaging, automation, device, or API features based on current README and available code search results.",
+      "tech": [],
+      "highlights": [],
+      "githubLink": "https://github.com/hakisolos/bytecamp"
     },
   ]
 
@@ -61,9 +59,8 @@ export function Portfolio() {
     <div className="min-h-screen bg-black text-white overflow-hidden">
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrollY > 50 ? "bg-black/90 backdrop-blur-md border-b border-white/10" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrollY > 50 ? "bg-black/90 backdrop-blur-md border-b border-white/10" : "bg-transparent"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
