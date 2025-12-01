@@ -37,7 +37,7 @@ export function Portfolio() {
       "tech": ["TypeScript", "SQLite", "Mongoose-like API"],
       "highlights": ["Schema-based Collections", "Async CRUD Methods", "SQLite Backend", "Easy Initialization"],
       "githubLink": "https://github.com/CodeTheEarth/flareDb"
-    }
+    },
    {
       "title": "bytecamp",
       "description": "No detailed description or evidence was found in the codebase to indicate this project is a Multi-device WhatsApp Bot or has related messaging, automation, device, or API features based on current README and available code search results.",

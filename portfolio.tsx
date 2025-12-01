@@ -18,34 +18,32 @@ export function Portfolio() {
 
   const skills = {
     languages: ["JavaScript", "Python", "Go", "TypeScript"],
-    databases: ["MongoDB", "Supabase", "Redis"],
+    databases: ["MongoDB", "Supabase", "Redis", "postgresql"],
     tools: ["Postman", "Git"],
   }
 
-  const projects = [
+   const projects = [
     {
-      title: "Personal Blogging API",
+      title: "File upload cdn",
       description:
-        "RESTful API for a personal blog with user authentication, CRUD operations, and real-time content management. Built with modern backend architecture.",
-      tech: ["Node.js", "MongoDB", "JWT", "Express.js"],
-      highlights: ["JWT Authentication", "RESTful Design", "Real-time Updates"],
-      githubLink: "https://github.com/hakisolos/personal-blogging-api",
+        "file storage cdn server making use of telegram api or vps",
+      tech: ["nodejs/bunjs", "Hono", "telegram-api"],
+      highlights: ["Storage", "Telegram-exploitation"],
+      githubLink: "https://github.com/hakisolos/cdn",
     },
     {
-      title: "Multi-device WhatsApp Bot",
-      description:
-        "Intelligent WhatsApp bot that works across multiple devices with automated responses, message scheduling, and custom commands.",
-      tech: ["Python", "WhatsApp API", "MongoDB", "Webhooks"],
-      highlights: ["Multi-device Support", "Automated Responses", "Custom Commands"],
-      githubLink: "https://github.com/hakisolos/wisteria-md",
+      "title": "FlareDB",
+      "description": "A lightweight database library combining the syntax familiarity of Mongoose with the simplicity and freedom of SQLite. FlareDB makes it easy to define schemas, manage collections, and perform basic CRUD operations with an intuitive API, suitable for fast prototyping and lightweight applications.",
+      "tech": ["TypeScript", "SQLite", "Mongoose-like API"],
+      "highlights": ["Schema-based Collections", "Async CRUD Methods", "SQLite Backend", "Easy Initialization"],
+      "githubLink": "https://github.com/CodeTheEarth/flareDb"
     },
-    {
-      title: "Telegram AI Bot",
-      description:
-        "AI-powered Telegram bot with natural language processing, smart replies, and integration with external APIs for enhanced functionality.",
-      tech: ["Go", "Telegram API", "AI Integration", "Redis"],
-      highlights: ["AI-Powered", "Natural Language", "Real-time Processing"],
-      githubLink: "https://github.com/hakisolos/amatullah",
+   {
+      "title": "bytecamp",
+      "description": "No detailed description or evidence was found in the codebase to indicate this project is a Multi-device WhatsApp Bot or has related messaging, automation, device, or API features based on current README and available code search results.",
+      "tech": [],
+      "highlights": [],
+      "githubLink": "https://github.com/hakisolos/bytecamp"
     },
   ]
 
