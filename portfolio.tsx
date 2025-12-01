@@ -24,7 +24,7 @@ export function Portfolio() {
 
    const projects = [
     {
-      title: "File upload cdn",
+      title: "FILE UPLOAD CDN",
       description:
         "file storage cdn server making use of telegram api or vps",
       tech: ["nodejs/bunjs", "Hono", "telegram-api"],
@@ -32,17 +32,17 @@ export function Portfolio() {
       githubLink: "https://github.com/hakisolos/cdn",
     },
     {
-      "title": "FlareDB",
+      "title": "FLAREDB",
       "description": "A lightweight database library combining the syntax familiarity of Mongoose with the simplicity and freedom of SQLite. FlareDB makes it easy to define schemas, manage collections, and perform basic CRUD operations with an intuitive API, suitable for fast prototyping and lightweight applications.",
-      "tech": ["TypeScript", "SQLite", "Mongoose-like API"],
+      "tech": ["TypeScript", "nodeJs"],
       "highlights": ["Schema-based Collections", "Async CRUD Methods", "SQLite Backend", "Easy Initialization"],
       "githubLink": "https://github.com/CodeTheEarth/flareDb"
     },
    {
-      "title": "bytecamp",
-      "description": "No detailed description or evidence was found in the codebase to indicate this project is a Multi-device WhatsApp Bot or has related messaging, automation, device, or API features based on current README and available code search results.",
-      "tech": [],
-      "highlights": [],
+      "title": "BYTECAMP",
+      "description": "A platform that makes learning while socializing possible, with ai integration",
+      "tech": ["Typescript", "Postgresql", "NextJs"],
+      "highlights": ["AI-Learning", "Social-network"],
       "githubLink": "https://github.com/hakisolos/bytecamp"
     },
   ]
